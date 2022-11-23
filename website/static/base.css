@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600;800&display=swap');
+
+body{
+    font-family: Inter;
+}
+
+::placeholder{
+    font-size: 14px;
+}
+
+.btn-primary{
+    background-color: #4EA24E;
+    border-color: #4EA24E;
+    color: white;
+    width: 12vw;
+    margin: 0 5px;
+    font-size: 1vw;
+}
+
+.btn-primary:active, .btn-primary:hover, .btn-primary:focus{
+    background-color: rgb(157, 249, 157, 20%);
+    border-color: #4EA24E;
+    color: #4EA24E;
+}
+
+.test{
+    padding-right:0;
+    padding-left:0;
+    margin-right:auto;
+    margin-left:auto
+}
+
+.navbar{
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+.navbar-survival101 {
+    background-color:#4EA24E;
+  }
+
+.navbar a{
+    color: white;
+}
+
+.custom-toggler.navbar-toggler {
+    border-color: white;
+}
+  
+.custom-toggler .navbar-toggler-icon {
+    background-image: url(
+"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 128, 0, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+/*Search Bar*/
+.input-group{
+    width: 50%;
+}
+
+.ms-n5 {
+    margin-left: -40px;
+}
+
+.navbar-nav .nav-item{
+    padding: 0px 0px 0px 30px;
+}
+
+.container-fluid{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.menu {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #868881;
+}
+
+.menu .bi{
+    font-size: 1.2rem;
+}
+
+.tos{
+    width: 100%;
+}
+
+.menu:hover, .menu:active, .menu:focus{
+    color: #4EA24E;
+}
+
+.tos:hover{
+    background-color: rgb(157, 249, 157, 20%);
+}
