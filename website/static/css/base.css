@@ -23,6 +23,10 @@ body{
     color: #4EA24E;
 }
 
+.cek {
+    height: 65px;
+}
+
 .test{
     padding-right:0;
     padding-left:0;
@@ -69,6 +73,10 @@ body{
     width: 100%;
     display: flex;
     justify-content: center;
+}
+
+.side-bar{
+    padding: 2.5rem 0;
 }
 
 .menu {
