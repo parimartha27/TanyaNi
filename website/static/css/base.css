@@ -69,12 +69,6 @@ body{
     padding: 0px 0px 0px 30px;
 }
 
-.container-fluid{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
 .side-bar{
     padding: 2.5rem 0;
 }

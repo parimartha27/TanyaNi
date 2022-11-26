@@ -1,0 +1,105 @@
+{% extends "base.html" %}
+{% block title %}Notification{% endblock %}
+{% block content %}
+<style>
+    .side-bar {
+        display: none;
+    }  
+
+    .notification{
+        padding: 3rem 0;
+    }
+
+    .notification .title{
+        padding: 0 10px;
+    }
+
+    .notification .title h5{
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .notification .title p{
+        color: #868881;
+        font-size: 14.5px;
+    }
+
+    .notification .row{
+        --bs-gutter-x: 0rem;
+    }
+
+    .notification .col{
+        padding: 10px 20px;
+    }
+
+    /* .notification .row :hover{
+        background-color: rgb(157, 249, 157, 20%);
+    } */
+
+    .notification .text-muted{
+        font-size: 12px;
+    }
+
+    .notification .profil span{
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .notification .not-text{
+        padding: 0 58px;
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+</style>
+
+<div class="container-fluid notification">
+    <div class="title d-flex justify-content-between">
+        <h5>Notifikasi</h3>
+        <p>Tandai Semua Sudah Dibaca</p>
+    </div>
+    <div class="row pt-2 d-flex flex-column">
+        <div class="col border-top border-bottom">
+            <div class="profil d-flex align-items-center">
+                <img src="https://ps.w.org/user-avatar-reloaded/assets/icon-256x256.png?rev=2540745" alt="" width="50" height="50" class="d-block ui-w-40 rounded-circle">
+                <div class="media-body ps-2"> 
+                    <div class="text-muted">1 jam yang lalu</div>
+                    <span>Apa pupuk yang cocok untuk menanam mangga?</span>
+                </div>
+            </div>
+            <span class="not-text">Parimartha menjawab pertanyaan yang Anda ajukan.</span>
+        </div>
+        <div class="col border-top border-bottom">
+            <div class="profil d-flex align-items-center">
+                <img src="https://ps.w.org/user-avatar-reloaded/assets/icon-256x256.png?rev=2540745" alt="" width="50" height="50" class="d-block ui-w-40 rounded-circle">
+                <div class="media-body ps-2"> 
+                    <div class="text-muted">1 jam yang lalu</div>
+                    <span>Apa pupuk yang cocok untuk menanam mangga?</span>
+                </div>
+            </div>
+            <span class="not-text">Parimartha menjawab pertanyaan yang Anda ajukan.</span>
+        </div>
+        <div class="col border-top border-bottom">
+            <div class="profil d-flex align-items-center">
+                <img src="https://ps.w.org/user-avatar-reloaded/assets/icon-256x256.png?rev=2540745" alt="" width="50" height="50" class="d-block ui-w-40 rounded-circle">
+                <div class="media-body ps-2"> 
+                    <div class="text-muted">1 jam yang lalu</div>
+                    <span>Apa pupuk yang cocok untuk menanam mangga?</span>
+                </div>
+            </div>
+            <span class="not-text">Parimartha menjawab pertanyaan yang Anda ajukan.</span>
+        </div>
+        <div class="col border-top border-bottom">
+            <div class="profil d-flex align-items-center">
+                <img src="https://ps.w.org/user-avatar-reloaded/assets/icon-256x256.png?rev=2540745" alt="" width="50" height="50" class="d-block ui-w-40 rounded-circle">
+                <div class="media-body ps-2"> 
+                    <div class="text-muted">1 jam yang lalu</div>
+                    <span>Apa pupuk yang cocok untuk menanam mangga?</span>
+                </div>
+            </div>
+            <span class="not-text">Parimartha menjawab pertanyaan yang Anda ajukan.</span>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
