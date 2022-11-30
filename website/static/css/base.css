@@ -41,7 +41,7 @@ body{
 
 .navbar-survival101 {
     background-color:#4EA24E;
-  }
+}
 
 .navbar a{
     color: white;
@@ -75,7 +75,6 @@ body{
 
 .menu {
     font-size: 1rem;
-    font-weight: 600;
     color: #868881;
     text-align: center;  /*disini*/
 }
@@ -92,6 +91,6 @@ body{
     color: #4EA24E;
 }
 
-.tos:hover{
+/* .tos:hover{
     background-color: rgb(157, 249, 157, 20%);
-}
+} */
