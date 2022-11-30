@@ -13,3 +13,7 @@ def errorPage():
 @views.route('/notification')
 def notification():
   return render_template('notification.html')
+
+@views.route('/buatPertanyaan')
+def buatPertanyaan():
+  return render_template('buatPertanyaan.html')

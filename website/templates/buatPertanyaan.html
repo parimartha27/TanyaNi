@@ -1,0 +1,89 @@
+{% extends "base.html" %}
+{% block title %}Buat Pertanyaan{% endblock %}
+{% block content %}
+
+<style>
+
+    /* .test .col-2{
+        display: none;
+    } */
+
+    .side-bar {
+        display: none;
+    } 
+
+    .buat-pertanyaan h5{
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .buat-pertanyaan p, li{
+        font-size: 14px;
+    }
+
+    .buat-pertanyaan .steps{
+        background-color: rgb(157, 249, 157, 20%);
+        color: #4EA24E;
+    }
+
+    .btn-light{
+        border-color: #868881;
+        color: #868881;
+        margin: 0 5px;
+        font-size: 1vw;
+    }
+
+    .btn-light:hover{
+        border-color: #4EA24E;
+    }
+
+
+
+</style>
+
+<div class="container-fluid p-5 buat-pertanyaan">
+    <div class="card steps p-4 mb-4">
+        <h5>Membuat pertanyaan yang baik</h5>
+        <p>Anda telah siap untuk bertanya dan form ini akan memandu Anda dalam pengisiannya.</p>
+        <p>Steps</p>
+        <ul>
+            <li>Usahakan judul yang Anda buat menggambarkan permasalahan yang ada.</li>
+            <li>Deskripsikan masalah Anda secara detail.</li>
+            <li>Tuliskan hasil yang Anda harapkan.</li>
+            <li>Tambahkan tag untuk memudahkan pengguna lain menjawab.</li>
+            <li>Review pertanyaan Anda dan unggah ke dalam forum.</li>
+        </ul>
+    </div>
+
+    <div class="card judul p-4 mb-4">
+        <h5>Judul</h5>
+        <p>Buat judul Anda dengan spesifik.</p>
+        <form class="form-group">
+            <input type="" class="form-control" id="" placeholder="contoh: Bagaimana menanam pohon pisang dengan baik?">
+        </form>
+    </div>
+
+    <div class="card rincian p-4 mb-4">
+        <h5>Rincian Permasalahan</h5>
+        <p>Buat judul Anda dengan spesifik.</p>
+        <form class="form-group">
+            <textarea name="" id="" class="form-control" rows="10" placeholder="contoh: Bagaimana menanam pohon pisang dengan baik?"></textarea>
+        </form>
+    </div>
+
+    <div class="card tags p-4 mb-4">
+        <h5>Tags</h5>
+        <p>Tambahkan tag yang berkaitan dengan pertanyaan Anda.</p>
+        <form class="form-group">
+            <input type="" class="form-control" id="" placeholder="">
+        </form>
+    </div>
+
+    <div class="d-flex flex-row">
+        <button type="button" class="btn btn-primary">Buat Pertanyaan</button>
+        <button type="button" class="btn btn-light">Batal</button>
+    </div>
+
+</div>
+
+{% endblock %}
