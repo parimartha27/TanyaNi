@@ -1,58 +1,15 @@
 {% extends "base.html" %}
 {% block title %}Notification{% endblock %}
 {% block content %}
-<style>
-    .side-bar {
-        display: none;
-    }  
 
-    .notification{
-        padding: 3rem 0;
-    }
+<!-- CSS -->
 
-    .notification .title{
-        padding: 0 10px;
-    }
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename='css/notification.css') }}"
+/>
 
-    .notification .title h5{
-        font-size: 18px;
-        font-weight: 600;
-    }
-
-    .notification .title a{
-        color: #868881;
-        font-size: 13px;
-    }
-
-    .notification .row{
-        --bs-gutter-x: 0rem;
-    }
-
-    .notification .col{
-        padding: 20px 30px;
-        background-color: rgb(157, 249, 157, 20%);
-    }
-
-    /* .notification .row :hover{
-        background-color: rgb(157, 249, 157, 20%);
-    } */
-
-    .notification .text-muted{
-        font-size: 12px;
-    }
-
-    .notification .profil span{
-        font-size: 16px;
-        font-weight: 600;
-    }
-
-    .notification .not-text{
-        padding: 0 58px;
-        font-size: 12px;
-        font-weight: 400;
-    }
-
-</style>
+<!-- HTML  -->
 
 <div class="container-fluid notification">
     <div class="title d-flex justify-content-between">
