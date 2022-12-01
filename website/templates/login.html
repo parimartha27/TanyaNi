@@ -31,7 +31,7 @@
                         <svf class="bi-shield-lock icon-form"></svf>
                         <input type="password" class="myform-input" placeholder="Sandi" id="validationDefault03" value="" required>
                     </div>
-                    <a class="kata-lupa" href="forgot-password.html">Lupa Password?</a>
+                    <a class="kata-lupa" href="{{ url_for('website', filename='templates/forgot-password.html') }}">Lupa Password?</a>
                     <div class="col-12">
                         <div class="form-check kotak-cek">
                             <input class="form-check-input kotak-ingat-saya" type="checkbox" value="" id="invalidCheck2" required>
@@ -54,7 +54,7 @@
                     <div class="col-12">
                         <h3 class="tanya-status">
                             Baru di sini?
-                            <a href="create-account.html">Buat akun sekarang!</a>
+                            <a href="{{ url_for('website', filename='templates/create-account.html') }}">Buat akun sekarang!</a>
                         </h3>
                     </div>
                 </form>
