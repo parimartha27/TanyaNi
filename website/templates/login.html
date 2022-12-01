@@ -58,9 +58,7 @@
                 required
               />
             </div>
-            <a
-              class="kata-lupa"
-              href="{{ url_for('website', filename='templates/forgot-password.html') }}"
+            <a class="kata-lupa" href="{{ url_for('views.forgot-password') }}"
               >Lupa Password?</a
             >
             <div class="col-12">
@@ -94,8 +92,7 @@
             <div class="col-12">
               <h3 class="tanya-status">
                 Baru di sini?
-                <a
-                  href="{{ url_for('website', filename='templates/create-account.html') }}"
+                <a href="{{ url_for('views.create-account') }}"
                   >Buat akun sekarang!</a
                 >
               </h3>
