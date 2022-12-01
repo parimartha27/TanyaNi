@@ -1,5 +1,6 @@
 {% extends "base.html" %} {% block title %}Home{% endblock %} {% block content
 %}
+<<<<<<< HEAD
 <style>
   .beranda {
     background-color: rgb(157, 249, 157, 20%);
@@ -60,6 +61,17 @@
     font-size: small;
   }
 </style>
+=======
+
+<!-- CSS -->
+
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename='css/home.css') }}"
+/>
+
+<!-- HTML  -->
+>>>>>>> dd94422bd065e71a88409aa82c2e1c28afc356fc
 
 <div class="container-fluid flex-column justify-content-between p-5">
   <div class="text-end">
@@ -96,10 +108,25 @@
             <p class="fw-bold">Apa pupuk yang cocok untuk menanam mangga?</p>
             <div class="key-word">
               <!-- <span class="badge bg-secondary" href="#">Menanam</span> -->
+<<<<<<< HEAD
               <button type="button" class="btn btn-light btn-sm">
                 Menanam
               </button>
               <button type="button" class="btn btn-light btn-sm">Mangga</button>
+=======
+              <button
+                type="button"
+                class="btn btn-light btn-sm d-none d-lg-inline"
+              >
+                Menanam
+              </button>
+              <button
+                type="button"
+                class="btn btn-light btn-sm d-none d-lg-inline"
+              >
+                Mangga
+              </button>
+>>>>>>> dd94422bd065e71a88409aa82c2e1c28afc356fc
             </div>
           </div>
           <div class="question">
@@ -253,10 +280,18 @@
   </div>
 </div>
 
+<<<<<<< HEAD
 <script>
   function myFunction() {
     document.getElementById('saved').style.color = 'blue';
   }
 </script>
+=======
+<!-- <script>
+  function myFunction() {
+    document.getElementById("saved").style.color = "blue";
+  }
+</script> -->
+>>>>>>> dd94422bd065e71a88409aa82c2e1c28afc356fc
 
 {% endblock %}

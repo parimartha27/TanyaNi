@@ -17,3 +17,15 @@ def notification():
 @views.route('/buatPertanyaan')
 def buatPertanyaan():
   return render_template('buatPertanyaan.html')
+
+@views.route('/createAccount')
+def createAccount():
+  return render_template('create-account.html')
+
+@views.route('/login')
+def login():
+  return render_template('login.html')
+
+@views.route('/forgotPassword')
+def forgotPassword():
+  return render_template('forgot-password.html')
