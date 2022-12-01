@@ -1,47 +1,50 @@
-{% extends "base.html" %}
-{% block title %}Error Page{% endblock %}
-{% block content %}
+{% extends "base.html" %} {% block title %}Error Page{% endblock %} {% block
+content %}
 <style>
-    .error{
-        height: 89vh;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
+  .error {
+    height: 89vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
 
-    .side-bar {
-        display: none;
-    }
+  .side-bar {
+    display: none;
+  }
 
-    .error {
-        padding: 0;
-        margin-right: 0;
-        font-family: inter;
-        color: #868881;
-    }
+  .error {
+    padding: 0;
+    margin-right: 0;
+    font-family: inter;
+    color: #868881;
+  }
 
-    .display-1{
-        font-size: 12vw;
-        letter-spacing: 15px;
-        color: #4EA24E;
-    }
-
+  .display-1 {
+    font-size: 12vw;
+    letter-spacing: 15px;
+    color: #4ea24e;
+  }
 </style>
 
 <div class="container-fluid error">
-    <div class="row d-flex justify-content-between align-items-center">
-        <div class="col-7 d-flex flex-column justify-content-center align-items-center">
-            <h1 class="display-1 fw-bold">404</h1>
-            <h3 class="fw-bold text-center">OOPS! MAAF HALAMAN TIDAK DITEMUKAN</h3>
-            <p class="text-center fs-6">Maaf, halaman yang Anda cari tidak ada. Jika menurut Anda ada yang rusak, laporkan masalah.</p>
-            <div class="d-grid gap-2 d-md-block">
-                <button class="btn btn-primary" type="button">Kembali ke Home</button>
-                <button class="btn btn-primary" type="button">Laporkan</button>
-              </div>
-        </div>
-        <div class="col">
-            <img class="img-fluid" src="/static/GambarPetani.png" alt="">
-        </div>
+  <div class="row d-flex justify-content-between align-items-center">
+    <div
+      class="col-7 d-flex flex-column justify-content-center align-items-center"
+    >
+      <h1 class="display-1 fw-bold">404</h1>
+      <h3 class="fw-bold text-center">OOPS! MAAF HALAMAN TIDAK DITEMUKAN</h3>
+      <p class="text-center fs-6">
+        Maaf, halaman yang Anda cari tidak ada. Jika menurut Anda ada yang
+        rusak, laporkan masalah.
+      </p>
+      <div class="d-grid gap-2 d-md-block">
+        <button class="btn btn-primary" type="button">Kembali ke Home</button>
+        <button class="btn btn-primary" type="button">Laporkan</button>
+      </div>
     </div>
+    <div class="col">
+      <img class="img-fluid" src="/static/GambarPetani.png" alt="" />
+    </div>
+  </div>
 </div>
 {% endblock %}
