@@ -1,0 +1,23 @@
+.error {
+  height: 89vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.side-bar {
+  display: none;
+}
+
+.error {
+  padding: 0;
+  margin-right: 0;
+  font-family: inter;
+  color: #868881;
+}
+
+.display-1 {
+  font-size: 12vw;
+  letter-spacing: 15px;
+  color: #4ea24e;
+}

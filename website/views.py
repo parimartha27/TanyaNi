@@ -17,3 +17,7 @@ def notification():
 @views.route('/buatPertanyaan')
 def buatPertanyaan():
   return render_template('buatPertanyaan.html')
+
+@views.route('/create-account')
+def createAccount():
+  return render_template('create-account.html')
