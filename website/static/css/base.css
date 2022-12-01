@@ -8,6 +8,13 @@ body{
     font-size: 14px;
 }
 
+.form-control:focus{
+    border-color: #4EA24E;  
+    box-shadow: #4EA24E; 
+    -webkit-box-shadow: none;
+} 
+
+
 .btn-primary{
     background-color: #4EA24E;
     border-color: #4EA24E;
@@ -26,6 +33,15 @@ body{
 .cek {
     height: 65px;
 }
+
+/* .ckck {
+    height: 100%;
+    position: fixed;
+    z-index: 1; 
+    top: 0; 
+    left: 0;
+    overflow-x: hidden;
+} */
 
 .test{
     padding-right:0;
