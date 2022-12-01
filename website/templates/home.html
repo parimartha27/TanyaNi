@@ -1,203 +1,262 @@
-{% extends "base.html" %}
-{% block title %}Home{% endblock %}
-{% block content %}
+{% extends "base.html" %} {% block title %}Home{% endblock %} {% block content
+%}
 <style>
-    .beranda{
-        background-color: rgb(157, 249, 157, 20%);
-        font-weight: 600;
-    }
+  .beranda {
+    background-color: rgb(157, 249, 157, 20%);
+    font-weight: 600;
+  }
 
-    .beranda .menu {
-        color: #4EA24E;
-    }
+  .beranda .menu {
+    color: #4ea24e;
+  }
 
-    .card-header {
-        padding: 1rem 1rem;
-        background-color: white;
-    }
-    .card-header .bi, .card-footer .bi{
-        color: #868881;
-    }
-    
-    .card-header .profil .text-muted{
-        font-size: 12px;
-    }
+  .card-header {
+    padding: 1rem 1rem;
+    background-color: white;
+  }
+  .card-header .bi,
+  .card-footer .bi {
+    color: #868881;
+  }
 
-    .question p, .key-word button{
-        color: #868881;
-        font-size: small;
-    }
+  .card-header .profil .text-muted {
+    font-size: 12px;
+  }
 
-    .key-word button{
-        border-color: #868881;
-        color: #868881;
-        margin: 0 5px;
-        font-size: 1vw;
-    }
+  .question p,
+  .key-word button {
+    color: #868881;
+    font-size: small;
+  }
 
-    .key-word button:hover{
-        border-color: #868881;
-    }
+  .key-word button {
+    border-color: #868881;
+    color: #868881;
+    margin: 0 5px;
+    font-size: 1vw;
+  }
 
-    .card-body{
-        padding-left: 5vw;
-        padding-right: 5vw;
-    }
+  .key-word button:hover {
+    border-color: #868881;
+  }
 
-    .card-footer {
-        padding: 1rem 1rem;
-        background-color: white;
-    }
+  .card-body {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
 
-    .card-footer .bi{
-        font-size: medium;
-        padding: 2px;
-    }
+  .card-footer {
+    padding: 1rem 1rem;
+    background-color: white;
+  }
 
-    .card-footer a{
-        color: #868881;
-        font-size: small;
-    }
+  .card-footer .bi {
+    font-size: medium;
+    padding: 2px;
+  }
 
+  .card-footer a {
+    color: #868881;
+    font-size: small;
+  }
 </style>
 
 <div class="container-fluid flex-column justify-content-between p-5">
+  <div class="text-end">
+    <button type="button" class="btn btn-primary">Buat Pertanyaan</button>
+  </div>
 
-    <div class="text-end">
-        <button type="button" class="btn btn-primary">Buat Pertanyaan</button>
+  <div class="row pt-4 d-flex flex-column">
+    <div class="col pb-4">
+      <div class="card">
+        <div class="card-header d-flex justify-content-between">
+          <div class="profil d-flex align-items-center">
+            <img
+              src="https://ps.w.org/user-avatar-reloaded/assets/icon-256x256.png?rev=2540745"
+              alt=""
+              width="50"
+              height="50"
+              class="d-block ui-w-40 rounded-circle"
+            />
+            <div class="media-body ps-2">
+              <a href="#" data-abc="true" class="text-dark text-decoration-none"
+                >Bambang</a
+              >
+              <div class="text-muted">15m yang lalu</div>
+            </div>
+          </div>
+          <div class="closetab">
+            <a type="button" href="#"><i class="bi bi-three-dots"></i></a>
+            <a type="button" href="#"><i class="bi bi-x"></i></a>
+          </div>
+        </div>
+
+        <div class="card-body d-flex flex-column">
+          <div class="d-flex justify-content-between Title">
+            <p class="fw-bold">Apa pupuk yang cocok untuk menanam mangga?</p>
+            <div class="key-word">
+              <!-- <span class="badge bg-secondary" href="#">Menanam</span> -->
+              <button type="button" class="btn btn-light btn-sm">
+                Menanam
+              </button>
+              <button type="button" class="btn btn-light btn-sm">Mangga</button>
+            </div>
+          </div>
+          <div class="question">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequatur quam ad, molestiae assumenda expedita, aut iste rem
+              nisi, qui omnis voluptates corrupti reiciendis repudiandae
+              dignissimos ipsa sequi tempora sed iure!
+            </p>
+          </div>
+          <div class="image">
+            <img
+              class="img-fluid"
+              src="https://asset.kompas.com/crops/XaytURaJTn1-yLXfwYnWzoSi82w=/62x43:942x630/750x500/data/photo/2022/06/13/62a6f4083f268.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="card-footer">
+          <a type="button"
+            ><i class="bi bi-bookmark" id="saved" onclick="myFunction()"></i
+          ></a>
+          <a type="button" href="#" class="text-decoration-none"
+            ><i class="bi bi-chat"></i> 64+</a
+          >
+        </div>
+      </div>
     </div>
 
-    <div class="row pt-4 d-flex flex-column">
-        <div class="col pb-4">
-            <div class="card">
-                <div class="card-header d-flex justify-content-between">
-                    <div class="profil d-flex align-items-center">
-                        <img src="https://ps.w.org/user-avatar-reloaded/assets/icon-256x256.png?rev=2540745" alt="" width="50" height="50" class="d-block ui-w-40 rounded-circle">
-                        <div class="media-body ps-2"> 
-                            <a href="#" data-abc="true" class="text-dark text-decoration-none">Bambang</a>
-                            <div class="text-muted">15m yang lalu</div>
-                        </div>
-                    </div>
-                    <div class="closetab">
-                        <a type="button" href="#"><i class="bi bi-three-dots"></i></a>
-                        <a type="button"href="#"><i class="bi bi-x"></i></a>
-                    </div>
-                </div>
-
-                <div class="card-body d-flex flex-column">
-                    <div class="d-flex justify-content-between Title">
-                        <p class="fw-bold">Apa pupuk yang cocok untuk menanam mangga?</p>
-                        <div class="key-word">
-                            <!-- <span class="badge bg-secondary" href="#">Menanam</span> -->
-                            <button type="button" class="btn btn-light btn-sm">Menanam</button>
-                            <button type="button" class="btn btn-light btn-sm">Mangga</button>
-                        </div>
-                    </div>
-                    <div class="question">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Consequatur quam ad, molestiae assumenda expedita, aut iste rem nisi, 
-                            qui omnis voluptates corrupti reiciendis repudiandae dignissimos ipsa sequi tempora sed iure!
-                        </p>
-                    </div>
-                    <div class="image">
-                        <img class="img-fluid" src="https://asset.kompas.com/crops/XaytURaJTn1-yLXfwYnWzoSi82w=/62x43:942x630/750x500/data/photo/2022/06/13/62a6f4083f268.jpg" alt="">
-                    </div>
-                </div>
-                <div class="card-footer">
-                    <a type="button"><i class="bi bi-bookmark" id="saved" onclick="myFunction()"></i></a>
-                    <a type="button" href="#" class="text-decoration-none"><i class="bi bi-chat"></i> 64+</a>
-                </div>
-              </div>
+    <div class="col pb-4">
+      <div class="card">
+        <div class="card-header d-flex justify-content-between">
+          <div class="profil d-flex align-items-center">
+            <img
+              src="https://ps.w.org/user-avatar-reloaded/assets/icon-256x256.png?rev=2540745"
+              alt=""
+              width="50"
+              height="50"
+              class="d-block ui-w-40 rounded-circle"
+            />
+            <div class="media-body ps-2">
+              <a href="#" data-abc="true" class="text-dark text-decoration-none"
+                >Bambang</a
+              >
+              <div class="text-muted small">15m yang lalu</div>
+            </div>
+          </div>
+          <div class="closetab">
+            <a type="button" href="#"><i class="bi bi-three-dots"></i></a>
+            <a type="button" href="#"><i class="bi bi-x"></i></a>
+          </div>
         </div>
 
-        <div class="col pb-4">
-            <div class="card">
-                <div class="card-header d-flex justify-content-between">
-                    <div class="profil d-flex align-items-center">
-                        <img src="https://ps.w.org/user-avatar-reloaded/assets/icon-256x256.png?rev=2540745" alt="" width="50" height="50" class="d-block ui-w-40 rounded-circle">
-                        <div class="media-body ps-2"> 
-                            <a href="#" data-abc="true" class="text-dark text-decoration-none">Bambang</a>
-                            <div class="text-muted small">15m yang lalu</div>
-                        </div>
-                    </div>
-                    <div class="closetab">
-                        <a type="button" href="#"><i class="bi bi-three-dots"></i></a>
-                        <a type="button"href="#"><i class="bi bi-x"></i></a>
-                    </div>
-                </div>
-
-                <div class="card-body d-flex flex-column">
-                    <div class="d-flex justify-content-between Title">
-                        <p class="fw-bold">Apa pupuk yang cocok untuk menanam mangga?</p>
-                        <div class="key-word">
-                            <button type="button" class="btn btn-light btn-sm">Menanam</button>
-                            <button type="button" class="btn btn-light btn-sm">Mangga</button>
-                        </div>
-                    </div>
-                    <div class="question">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Consequatur quam ad, molestiae assumenda expedita, aut iste rem nisi, 
-                            qui omnis voluptates corrupti reiciendis repudiandae dignissimos ipsa sequi tempora sed iure!
-                        </p>
-                    </div>
-                    <div class="image">
-                        <img class="img-fluid" src="https://cdf.orami.co.id/unsafe/cdn-cas.orami.co.id/parenting/images/brokoli_7GR7GEf.width-800.jpegquality-80.jpg" alt="">
-                    </div>
-                </div>
-                <div class="card-footer">
-                    <a type="button"><i class="bi bi-bookmark" id="saved" onclick="myFunction()"></i></a>
-                    <a type="button" href="#" class="text-decoration-none"><i class="bi bi-chat"></i> 64+</a>
-                </div>
-              </div>
+        <div class="card-body d-flex flex-column">
+          <div class="d-flex justify-content-between Title">
+            <p class="fw-bold">Apa pupuk yang cocok untuk menanam mangga?</p>
+            <div class="key-word">
+              <button type="button" class="btn btn-light btn-sm">
+                Menanam
+              </button>
+              <button type="button" class="btn btn-light btn-sm">Mangga</button>
+            </div>
+          </div>
+          <div class="question">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequatur quam ad, molestiae assumenda expedita, aut iste rem
+              nisi, qui omnis voluptates corrupti reiciendis repudiandae
+              dignissimos ipsa sequi tempora sed iure!
+            </p>
+          </div>
+          <div class="image">
+            <img
+              class="img-fluid"
+              src="https://cdf.orami.co.id/unsafe/cdn-cas.orami.co.id/parenting/images/brokoli_7GR7GEf.width-800.jpegquality-80.jpg"
+              alt=""
+            />
+          </div>
         </div>
-
-        <div class="col pb-4">
-            <div class="card">
-                <div class="card-header d-flex justify-content-between">
-                    <div class="profil d-flex align-items-center">
-                        <img src="https://ps.w.org/user-avatar-reloaded/assets/icon-256x256.png?rev=2540745" alt="" width="50" height="50" class="d-block ui-w-40 rounded-circle">
-                        <div class="media-body ps-2"> 
-                            <a href="#" data-abc="true" class="text-dark text-decoration-none">Bambang</a>
-                            <div class="text-muted small">15m yang lalu</div>
-                        </div>
-                    </div>
-                    <div class="closetab">
-                        <a type="button" href="#"><i class="bi bi-three-dots"></i></a>
-                        <a type="button"href="#"><i class="bi bi-x"></i></a>
-                    </div>
-                </div>
-
-                <div class="card-body d-flex flex-column">
-                    <div class="d-flex justify-content-between Title">
-                        <p class="fw-bold">Apa pupuk yang cocok untuk menanam mangga?</p>
-                        <div class="key-word">
-                            <button type="button" class="btn btn-light btn-sm">Menanam</button>
-                            <button type="button" class="btn btn-light btn-sm">Mangga</button>
-                        </div>
-                    </div>
-                    <div class="question">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Consequatur quam ad, molestiae assumenda expedita, aut iste rem nisi, 
-                            qui omnis voluptates corrupti reiciendis repudiandae dignissimos ipsa sequi tempora sed iure!
-                        </p>
-                    </div>
-                    <div class="image">
-                        <img class="img-fluid" src="https://assets.pikiran-rakyat.com/crop/0x0:0x0/x/photo/2020/09/17/1517003805.jpg" alt="">
-                    </div>
-                </div>
-                <div class="card-footer">
-                    <a type="button"><i class="bi bi-bookmark" id="saved" onclick="myFunction()"></i></a>
-                    <a type="button" href="#" class="text-decoration-none"><i class="bi bi-chat"></i> 64+</a>
-                </div>
-              </div>
+        <div class="card-footer">
+          <a type="button"
+            ><i class="bi bi-bookmark" id="saved" onclick="myFunction()"></i
+          ></a>
+          <a type="button" href="#" class="text-decoration-none"
+            ><i class="bi bi-chat"></i> 64+</a
+          >
         </div>
+      </div>
     </div>
+
+    <div class="col pb-4">
+      <div class="card">
+        <div class="card-header d-flex justify-content-between">
+          <div class="profil d-flex align-items-center">
+            <img
+              src="https://ps.w.org/user-avatar-reloaded/assets/icon-256x256.png?rev=2540745"
+              alt=""
+              width="50"
+              height="50"
+              class="d-block ui-w-40 rounded-circle"
+            />
+            <div class="media-body ps-2">
+              <a href="#" data-abc="true" class="text-dark text-decoration-none"
+                >Bambang</a
+              >
+              <div class="text-muted small">15m yang lalu</div>
+            </div>
+          </div>
+          <div class="closetab">
+            <a type="button" href="#"><i class="bi bi-three-dots"></i></a>
+            <a type="button" href="#"><i class="bi bi-x"></i></a>
+          </div>
+        </div>
+
+        <div class="card-body d-flex flex-column">
+          <div class="d-flex justify-content-between Title">
+            <p class="fw-bold">Apa pupuk yang cocok untuk menanam mangga?</p>
+            <div class="key-word">
+              <button type="button" class="btn btn-light btn-sm">
+                Menanam
+              </button>
+              <button type="button" class="btn btn-light btn-sm">Mangga</button>
+            </div>
+          </div>
+          <div class="question">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequatur quam ad, molestiae assumenda expedita, aut iste rem
+              nisi, qui omnis voluptates corrupti reiciendis repudiandae
+              dignissimos ipsa sequi tempora sed iure!
+            </p>
+          </div>
+          <div class="image">
+            <img
+              class="img-fluid"
+              src="https://assets.pikiran-rakyat.com/crop/0x0:0x0/x/photo/2020/09/17/1517003805.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="card-footer">
+          <a type="button"
+            ><i class="bi bi-bookmark" id="saved" onclick="myFunction()"></i
+          ></a>
+          <a type="button" href="#" class="text-decoration-none"
+            ><i class="bi bi-chat"></i> 64+</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
 <script>
-function myFunction() {
-  document.getElementById("saved").style.color = "blue";
-}
+  function myFunction() {
+    document.getElementById("saved").style.color = "blue";
+  }
 </script>
 
 {% endblock %}
