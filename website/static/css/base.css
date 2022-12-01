@@ -35,7 +35,6 @@ body {
   height: 65px;
 }
 
-<<<<<<< HEAD
 /* .ckck {
     height: 100%;
     position: fixed;
@@ -55,19 +54,6 @@ body {
 .navbar {
   padding-left: 35px;
   padding-right: 35px;
-=======
-.test{
-    padding-right:0;
-    padding-left:0;
-    margin-right:auto;
-    margin-left:auto;
-}
-
-
-.navbar{
-    padding-left: 35px;
-    padding-right: 35px;
->>>>>>> dd94422bd065e71a88409aa82c2e1c28afc356fc
 }
 
 .navbar-survival101 {
