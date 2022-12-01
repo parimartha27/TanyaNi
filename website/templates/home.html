@@ -33,7 +33,7 @@
     border-color: #868881;
     color: #868881;
     margin: 0 5px;
-    font-size: 1vw;
+    font-size: 0.75vw;
   }
 
   .key-word button:hover {
@@ -96,10 +96,18 @@
             <p class="fw-bold">Apa pupuk yang cocok untuk menanam mangga?</p>
             <div class="key-word">
               <!-- <span class="badge bg-secondary" href="#">Menanam</span> -->
-              <button type="button" class="btn btn-light btn-sm">
+              <button
+                type="button"
+                class="btn btn-light btn-sm d-none d-lg-inline"
+              >
                 Menanam
               </button>
-              <button type="button" class="btn btn-light btn-sm">Mangga</button>
+              <button
+                type="button"
+                class="btn btn-light btn-sm d-none d-lg-inline"
+              >
+                Mangga
+              </button>
             </div>
           </div>
           <div class="question">
@@ -253,10 +261,10 @@
   </div>
 </div>
 
-<script>
+<!-- <script>
   function myFunction() {
     document.getElementById("saved").style.color = "blue";
   }
-</script>
+</script> -->
 
 {% endblock %}
