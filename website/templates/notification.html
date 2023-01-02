@@ -9,15 +9,18 @@
   href="{{ url_for('static', filename='css/notification.css') }}"
 />
 
+<script src="{{ url_for('static', filename='js/notif.js') }}"></script>
+
 <!-- HTML  -->
 
 <div class="container-fluid notification">
     <div class="title d-flex justify-content-between">
         <h5>Notifikasi</h3>
-        <a href="#" class="text-decoration-none">Tandai Semua Sudah Dibaca</a>
+        <span id="notifications"></span>
+        <a href="#" class="text-decoration-none mark_all">Tandai Semua Sudah Dibaca</a>
     </div>
     <div class="row pt-2 d-flex flex-column">
-        <div class="col border-top border-bottom">
+        <div class="col border-top border-bottom unread">
             <div class="profil d-flex align-items-center">
                 <img src="https://ps.w.org/user-avatar-reloaded/assets/icon-256x256.png?rev=2540745" alt="" width="50" height="50" class="d-block ui-w-40 rounded-circle">
                 <div class="media-body ps-2"> 
@@ -27,7 +30,7 @@
             </div>
             <span class="not-text">Parimartha menjawab pertanyaan yang Anda ajukan.</span>
         </div>
-        <div class="col border-top border-bottom">
+        <div class="col border-top border-bottom unread">
             <div class="profil d-flex align-items-center">
                 <img src="https://ps.w.org/user-avatar-reloaded/assets/icon-256x256.png?rev=2540745" alt="" width="50" height="50" class="d-block ui-w-40 rounded-circle">
                 <div class="media-body ps-2"> 
@@ -37,7 +40,7 @@
             </div>
             <span class="not-text">Parimartha menjawab pertanyaan yang Anda ajukan.</span>
         </div>
-        <div class="col border-top border-bottom">
+        <div class="col border-top border-bottom unread">
             <div class="profil d-flex align-items-center">
                 <img src="https://ps.w.org/user-avatar-reloaded/assets/icon-256x256.png?rev=2540745" alt="" width="50" height="50" class="d-block ui-w-40 rounded-circle">
                 <div class="media-body ps-2"> 
@@ -47,7 +50,7 @@
             </div>
             <span class="not-text">Parimartha menjawab pertanyaan yang Anda ajukan.</span>
         </div>
-        <div class="col border-top border-bottom">
+        <div class="col border-top border-bottom unread">
             <div class="profil d-flex align-items-center">
                 <img src="https://ps.w.org/user-avatar-reloaded/assets/icon-256x256.png?rev=2540745" alt="" width="50" height="50" class="d-block ui-w-40 rounded-circle">
                 <div class="media-body ps-2"> 

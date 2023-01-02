@@ -26,7 +26,6 @@
 
 .notification .col{
     padding: 20px 30px;
-    background-color: rgb(157, 249, 157, 20%);
 }
 
 /* .notification .row :hover{
@@ -47,3 +46,8 @@
     font-size: 12px;
     font-weight: 400;
 }
+
+.unread {
+    background-color: rgb(157, 249, 157, 20%);
+}
+
