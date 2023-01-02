@@ -24,15 +24,15 @@ def buatPertanyaan():
 
 
 @views.route('/login')
-def buatPertanyaan():
+def login():
     return render_template('login.html')
 
 
 @views.route('/createAccount')
-def buatPertanyaan():
+def createAccount():
     return render_template('create-account.html')
 
 
 @views.route('/forgotPassword')
-def buatPertanyaan():
+def forgotPassword():
     return render_template('forgot-password.html')
