@@ -1,23 +1,42 @@
 {% extends "base.html" %} {% block title %}Buat Pertanyaan{% endblock %} {%
 block content %}
 
-<!-- CSS -->
+<style>
+  /* .test .col-2{
+        display: none;
+    } */
 
-<link
-  rel="stylesheet"
-  href="{{ url_for('static', filename='css/buatPertanyaan.css') }}"
-/>
+  .side-bar {
+    display: none;
+  }
 
-<!-- js -->
+  .buat-pertanyaan h5 {
+    font-size: 16px;
+    font-weight: 600;
+  }
 
-<script
-  src="https://cdn.tiny.cloud/1/no-api-key/tinymce/6/tinymce.min.js"
-  referrerpolicy="origin"
-></script>
+  .buat-pertanyaan p,
+  li {
+    font-size: 14px;
+    font-weight: 400;
+  }
 
-<script src="{{ url_for('static', filename='js/buatPertanyaan.js') }}"></script>
+  .buat-pertanyaan .steps {
+    background-color: rgb(157, 249, 157, 20%);
+    color: #4ea24e;
+  }
 
-<!-- HTML  -->
+  .btn-light {
+    border-color: #868881;
+    color: #868881;
+    margin: 0 5px;
+    font-size: 1vw;
+  }
+
+  .btn-light:hover {
+    border-color: #4ea24e;
+  }
+</style>
 
 <div class="container-fluid p-5 buat-pertanyaan">
   <div class="card steps p-4 mb-4">
@@ -57,7 +76,7 @@ block content %}
     <form class="form-group">
       <textarea
         name=""
-        id="editor"
+        id=""
         class="form-control"
         rows="10"
         placeholder="contoh: Bagaimana menanam pohon pisang dengan baik?"

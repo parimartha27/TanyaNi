@@ -1,14 +1,65 @@
 {% extends "base.html" %} {% block title %}Home{% endblock %} {% block content
 %}
+<style>
+  .beranda {
+    background-color: rgb(157, 249, 157, 20%);
+    font-weight: 600;
+  }
 
-<!-- CSS -->
+  .beranda .menu {
+    color: #4ea24e;
+  }
 
-<link
-  rel="stylesheet"
-  href="{{ url_for('static', filename='css/home.css') }}"
-/>
+  .card-header {
+    padding: 1rem 1rem;
+    background-color: white;
+  }
+  .card-header .bi,
+  .card-footer .bi {
+    color: #868881;
+  }
 
-<!-- HTML  -->
+  .card-header .profil .text-muted {
+    font-size: 12px;
+  }
+
+  .question p,
+  .key-word button {
+    color: #868881;
+    font-size: small;
+  }
+
+  .key-word button {
+    border-color: #868881;
+    color: #868881;
+    margin: 0 5px;
+    font-size: 1vw;
+  }
+
+  .key-word button:hover {
+    border-color: #868881;
+  }
+
+  .card-body {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+
+  .card-footer {
+    padding: 1rem 1rem;
+    background-color: white;
+  }
+
+  .card-footer .bi {
+    font-size: medium;
+    padding: 2px;
+  }
+
+  .card-footer a {
+    color: #868881;
+    font-size: small;
+  }
+</style>
 
 <div class="container-fluid flex-column justify-content-between p-5">
   <div class="text-end">
@@ -45,18 +96,10 @@
             <p class="fw-bold">Apa pupuk yang cocok untuk menanam mangga?</p>
             <div class="key-word">
               <!-- <span class="badge bg-secondary" href="#">Menanam</span> -->
-              <button
-                type="button"
-                class="btn btn-light btn-sm d-none d-lg-inline"
-              >
+              <button type="button" class="btn btn-light btn-sm">
                 Menanam
               </button>
-              <button
-                type="button"
-                class="btn btn-light btn-sm d-none d-lg-inline"
-              >
-                Mangga
-              </button>
+              <button type="button" class="btn btn-light btn-sm">Mangga</button>
             </div>
           </div>
           <div class="question">
@@ -210,10 +253,10 @@
   </div>
 </div>
 
-<!-- <script>
+<script>
   function myFunction() {
-    document.getElementById("saved").style.color = "blue";
+    document.getElementById('saved').style.color = 'blue';
   }
-</script> -->
+</script>
 
 {% endblock %}
