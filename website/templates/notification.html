@@ -40,19 +40,20 @@ content %}
     font-size: 12px;
   }
 
-<link
-  rel="stylesheet"
-  href="{{ url_for('static', filename='css/notification.css') }}"
-/>
-
-<script src="{{ url_for('static', filename='js/notif.js') }}"></script>
-
+  
   .notification .not-text {
     padding: 0 58px;
     font-size: 12px;
     font-weight: 400;
   }
-</style>
+  </style>
+  
+  <link
+    rel="stylesheet"
+    href="{{ url_for('static', filename='css/notification.css') }}"
+  />
+  
+  <script src="{{ url_for('static', filename='js/notif.js') }}"></script>
 
 <div class="container-fluid notification">
     <div class="title d-flex justify-content-between">
