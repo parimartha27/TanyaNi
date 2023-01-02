@@ -67,7 +67,9 @@
                 required
               />
             </div>
-            <a class="kata-lupa" href="forgot-password.html">Lupa Password?</a>
+            <a class="kata-lupa" href="{{ url_for('views.forgotPassword') }}"
+              >Lupa Password?</a
+            >
             <div class="col-12">
               <div class="form-check kotak-cek">
                 <input
@@ -103,7 +105,9 @@
             <div class="col-12">
               <h3 class="tanya-status">
                 Baru di sini?
-                <a href="create-account.html">Buat akun sekarang!</a>
+                <a href="{{ url_for('views.createAccount') }}"
+                  >Buat akun sekarang!</a
+                >
               </h3>
             </div>
           </form>
