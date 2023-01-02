@@ -28,7 +28,7 @@ def buatPertanyaan():
     return render_template('login.html')
 
 
-@views.route('/create-account')
+@views.route('/createAccount')
 def buatPertanyaan():
     return render_template('create-account.html')
 
