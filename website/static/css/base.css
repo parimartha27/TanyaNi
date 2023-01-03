@@ -52,8 +52,8 @@ body {
 }
 
 .navbar {
-  padding-left: 35px;
-  padding-right: 35px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .navbar-survival101 {
@@ -74,7 +74,7 @@ body {
 
 /*Search Bar*/
 .input-group {
-  width: 50%;
+  width: 55%;
 }
 
 .ms-n5 {
@@ -84,6 +84,11 @@ body {
 .navbar-nav .nav-item {
   padding: 0px 0px 0px 30px;
 }
+
+.navbar .btn-outline-secondary:hover{
+  color:#6c757d;
+}
+
 
 .side-bar {
   padding: 2.5rem 0;

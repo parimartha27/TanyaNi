@@ -55,6 +55,10 @@
     padding: 2px;
   }
 
+  .card-footer .bi-bookmark-fill {
+    border-color: #4ea24e;
+  }
+
   .card-footer a {
     color: #868881;
     font-size: small;
@@ -119,9 +123,7 @@
           </div>
         </div>
         <div class="card-footer">
-          <a type="button"
-            ><i class="bi bi-bookmark" id="saved" onclick="myFunction()"></i
-          ></a>
+          <a type="button"> <i class="bi bi-bookmark-fill"></i></a>
           <a type="button" href="#" class="text-decoration-none"
             ><i class="bi bi-chat"></i> 64+</a
           >
@@ -180,9 +182,7 @@
           </div>
         </div>
         <div class="card-footer">
-          <a type="button"
-            ><i class="bi bi-bookmark" id="saved" onclick="myFunction()"></i
-          ></a>
+          <a type="button"><i class="bi bi-bookmark" id="saved"></i></a>
           <a type="button" href="#" class="text-decoration-none"
             ><i class="bi bi-chat"></i> 64+</a
           >
@@ -252,11 +252,5 @@
     </div>
   </div>
 </div>
-
-<!-- <script>
-  function myFunction() {
-    document.getElementById('saved').style.color = 'blue';
-  }
-</script> -->
 
 {% endblock %}

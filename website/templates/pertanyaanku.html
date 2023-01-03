@@ -1,0 +1,112 @@
+{% extends "base.html" %} {% block title %}Pertanyaanku{% endblock %} {% block
+content %}
+
+<style>
+  .pertanyaanku {
+    background-color: rgb(157, 249, 157, 20%);
+    font-weight: 600;
+  }
+
+  .pertanyaanku .menu {
+    color: #4ea24e;
+  }
+
+  .title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .btn-light {
+    border-color: #868881;
+    color: #868881;
+    margin: 0 5px;
+    font-size: 1vw;
+  }
+
+  .btn-light:hover {
+    border-color: #4ea24e;
+  }
+
+  /* .btn-light:active {
+    border-color: #868881;
+    color: #868881;
+    margin: 0 5px;
+    font-size: 1vw;
+  } */
+
+  .notif .row {
+    --bs-gutter-x: 0rem;
+  }
+
+  .notif .col {
+    padding: 20px 30px;
+  }
+
+  .notif .answer {
+    width: 15%;
+  }
+
+  .notif .text h5 {
+    color: #4ea24e;
+  }
+
+  .notif .text p {
+    font-size: small;
+  }
+
+  .notif .footer .text-muted {
+    font-size: small;
+  }
+</style>
+
+<div class="container-fluid flex-column justify-content-between p-5 pb-0">
+  <div class="title">
+    <h5>Semua Jawaban</h5>
+    <button type="button" class="btn btn-primary">Buat Pertanyaan</button>
+  </div>
+
+  <div class="dropdown text-end pt-4 pb-4">
+    <button
+      class="btn btn-light dropdown-toggle"
+      type="button"
+      id="dropdownMenuButton1"
+      data-bs-toggle="dropdown"
+      aria-expanded="false"
+    >
+      Sort
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+      <li><a class="dropdown-item" href="#">Terbaru</a></li>
+      <li><a class="dropdown-item" href="#">Terlama</a></li>
+    </ul>
+  </div>
+</div>
+
+<div class="container-fluid notif p-0">
+  <div class="row pt-2 d-flex flex-column">
+    <div class="col border-top border-bottom unread d-flex flex-row">
+      <div class="text-muted answer">
+        <p>2 jawaban</p>
+      </div>
+      <div class="text">
+        <h5>Apa pupuk yang cocok untuk menanam mangga?</h5>
+        <p>
+          Saya menggunakan pupuk merk X. Tapi, setelah beberapa bulan masih juga
+          belum ada pertumbuhan. Apakah metode atau treatment yang saya lakukan
+          salah? (lebih banyak)
+        </p>
+        <div class="d-flex flex-row justify-content-between footer">
+          <div class="key-word">
+            <!-- <span class="badge bg-secondary" href="#">Menanam</span> -->
+            <button type="button" class="btn btn-light btn-sm">Menanam</button>
+            <button type="button" class="btn btn-light btn-sm">Mangga</button>
+          </div>
+          <span class="text-muted">15m yang lalu</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

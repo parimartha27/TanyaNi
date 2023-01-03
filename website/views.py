@@ -36,3 +36,8 @@ def createAccount():
 @views.route('/forgotPassword')
 def forgotPassword():
     return render_template('forgot-password.html')
+
+
+@views.route('/pertanyaanku')
+def pertanyaanku():
+    return render_template('pertanyaanku.html')

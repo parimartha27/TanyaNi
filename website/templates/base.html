@@ -101,13 +101,16 @@
         <div class="container-fluid side-bar">
           <ul class="nav align-items-center align-items-sm-start" id="menu">
             <li class="nav-item p-2 tos beranda">
-              <a href="#" class="nav-link align-middle px-0 font-italic menu">
+              <a
+                href="{{ url_for('views.home') }}"
+                class="nav-link align-middle px-0 font-italic menu"
+              >
                 <i class="bi bi-house-door"></i>
                 <span class="ms-2 d-none d-lg-inline">Beranda</span>
               </a>
             </li>
             <li class="nav-item p-2 tos pertanyaanku">
-              <a href="#" class="nav-link px-0 align-middle font-italic menu">
+              <a href="{{ url_for('views.pertanyaanku') }}" class="nav-link px-0 align-middle font-italic menu">
                 <i class="bi bi-chat"></i>
                 <span class="ms-2 d-none d-lg-inline">Pertanyaanku</span></a
               >
