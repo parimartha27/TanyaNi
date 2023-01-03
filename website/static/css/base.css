@@ -91,6 +91,8 @@ body {
 
 .side-bar {
   padding: 2.5rem 0;
+  position: fixed;
+  width: 16.65%;
 }
 
 .menu {
