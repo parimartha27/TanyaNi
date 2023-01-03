@@ -1,6 +1,29 @@
 {% extends "base.html" %} {% block title %}Buat Pertanyaan{% endblock %} {%
 block content %}
 
+<meta charset="utf-8" />
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1, shrink-to-fit=no"
+/>
+
+<script
+  src="https://cdn.tiny.cloud/1/fpssdfawcim7qf7tajsnz09q8rvkn6rabb4rohearbc71ea2/tinymce/6/tinymce.min.js"
+  referrerpolicy="origin"
+></script>
+
+<script>
+  tinymce.init({
+    selector: "textarea#editor",
+    skin: "bootstrap",
+    plugins: "lists, link, image, media",
+    toolbar:
+      "h1 h2 bold italic strikethrough blockquote bullist numlist backcolor | link image media | removeformat help",
+    menubar: false,
+    statusbar: false,
+  });
+</script>
+
 <style>
   /* .test .col-2{
         display: none;
@@ -76,7 +99,7 @@ block content %}
     <form class="form-group">
       <textarea
         name=""
-        id=""
+        id="editor"
         class="form-control"
         rows="10"
         placeholder="contoh: Bagaimana menanam pohon pisang dengan baik?"
