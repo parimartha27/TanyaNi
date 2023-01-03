@@ -85,10 +85,9 @@ body {
   padding: 0px 0px 0px 30px;
 }
 
-.navbar .btn-outline-secondary:hover{
-  color:#6c757d;
+.navbar .btn-outline-secondary:hover {
+  color: #6c757d;
 }
-
 
 .side-bar {
   padding: 2.5rem 0;
